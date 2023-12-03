@@ -21,5 +21,7 @@ func main() {
 		os.Exit(1)
 	}
 
-	fmt.Println("Part Number Sum:", SumInputs(fileBytes))
+	partNumberSum, gearPowers := ProcessInput(fileBytes)
+	fmt.Println("Part Number Sum:", partNumberSum)
+	fmt.Println("Gear Powers:", gearPowers)
 }
